@@ -1,0 +1,17 @@
+.catalog-more {
+  @include container;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 55px;
+}
+
+.catalog-more__link {
+  font-family: "latobold";
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: .5;
+
+  &:hover {
+    opacity: 1;
+  }
+}

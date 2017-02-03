@@ -1,1 +1,1 @@
-# c-and-b
+# C&B catalog

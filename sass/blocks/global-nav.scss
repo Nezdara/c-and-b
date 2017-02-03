@@ -1,0 +1,44 @@
+.global-nav {
+  @include container;
+  display: flex;
+}
+
+.global-nav__list {
+  display: flex;
+  padding: 16px 0;
+
+  &--currency {
+    border-right: 1px solid #ededed;
+    margin-left: auto;
+  }
+}
+
+.global-nav__item {
+  margin-right: 35px;
+
+  &--language {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  &--currency {
+    margin-right: 20px;
+  }
+}
+
+.global-nav__link {
+  font-family: "latobold";
+  font-size: 11px;
+  text-transform: uppercase;
+  opacity: .5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.global-nav__icon {
+  margin-left: 13px;
+  font-size: 14px;
+  opacity: 1;
+}

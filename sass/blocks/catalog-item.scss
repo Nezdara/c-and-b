@@ -1,0 +1,76 @@
+.catalog-item {
+  width: 100%;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+@media #{$tablet} {
+  .catalog-item {
+    width: 50%;
+  }
+}
+
+@media #{$desktop} {
+  .catalog-item {
+    width: 263px;
+  }
+}
+
+.catalog-item__img {
+  margin-bottom: 26px;
+}
+
+.catalog-item__link {
+  margin-bottom: 9px;
+  font-family: "playfair_displayregular";
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-item__worth {
+  display: flex;
+}
+
+.catalog-item__price {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  opacity: .5;
+
+  &--old {
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+
+  &--sale {
+    color: #fc411d;
+    opacity: 1;
+  }
+}
+
+.catalog-item__new {
+  display: none;
+}
+
+@media #{$desktop} {
+  .catalog-item__new {
+    width: 50px;
+    height: 25px;
+    background: linear-gradient(to right, rgba(153,153,153,0) 0%,rgba(228,228,228,0) 52%,rgba(229,229,229,0.02) 53%,rgba(229,229,229,0.5) 100%), #177bd6;
+    color: white;
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 20px;
+  }
+}

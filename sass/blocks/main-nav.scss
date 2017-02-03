@@ -1,0 +1,86 @@
+.main-nav {
+  @include container-fluid;
+  border: 1px solid #ededed;
+  border-left: none;
+  border-right: none;
+}
+
+.main-nav__nav {
+  @include container;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__logo {
+  margin-right: 190px;
+  padding: 10px 0;
+  font-family: "gfs_didotregular";
+  font-size: 52px;
+
+  &--and{
+    font-size: 32px;
+    margin: 0;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.main-nav__item {
+  margin-right: 55px;
+
+  &--bag {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  &--search {
+    opacity: 1;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  &--value {
+    margin: 0;
+  }
+}
+
+.main-nav__link {
+  font-family: "latobold";
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: .5;
+  padding-bottom: 5px;
+
+  &--active,
+  &:hover {
+    opacity: 1;
+    border-bottom: 2px solid #177bd6;
+    transition: opacity 0.4s;
+  }
+
+  &--sale {
+    color: #fc411d;
+    opacity: 1;
+  }
+
+  &--value{
+    width: 46px;
+    height: 46px;
+    margin: 0;
+    border: 2px solid #177bd6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    opacity: 1;
+  }
+}
+
+.main-nav__icon {
+  font-size: 14px;
+}
